@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		
+		body{
+			font-family: arial;
+			padding: 10px;
+			background: #f1f1f1;
+		}
+
+		/*Header / Blog Title */
+		.header{
+			padding: 30px;
+			text-align: center;
+			background: white;
+		}
+
+		.header h1{
+			font-size: 50px;
+		}
+
+		/* Style the navigation bar */
+		.navbar{
+			overflow: hidden;
+			background-color: #333;
+		}
+
+		/* Style yhe navbar links */
+		.navbar a{
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		/* Change color on hover */
+		.navbar a:hover{
+			background-color: #ddd;
+			color: black;
+		}
+
+		/* Create two unequal colums that floats next to each other */
+		/*Left column */
+		.leftcolum{
+			float: left;
+			width: 75%;
+		}
+
+		/*Right column*/
+		.rightcolumn{
+			float: left;
+			width: 25%;
+			background-color: #f1f1f1;
+			padding-left: 20px;
+		}
+
+		/* Fake image */
+		.fakeimg{
+			background-color: #aaa;
+			width: 100%;
+			padding: 20px;
+		}
+
+		/* Add a card effect for article */
+		.card{
+			background-color: white;
+			padding: 20px;
+			margin-top: 20px;
+		}
+
+		/*  Clear floats after the columns */
+		.row::after{
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		/* Footer */
+		.footer{
+			padding: 20px;
+			text-align: center;
+			background: #ddd;
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1> My Website <br>Dani</h1>
+		<p>Resize the browser window to see effect.</p>
+	</div>
+
+	<div class="navbar">
+		<a href="index2.html">HOME</a>
+		<a href="about.html">About</a>
+		<a href="#" style="float: right;">Link</a>
+	</div>
+
+	<div class="row">
+		<div class="leftcolum">
+			<div class="card">
+				<h2>TITLE HEADING</h2>
+				<h5> Title Description</h5>
+				<div class="fakeimg" style="height: 200px;">Image</div>
+				<p>Some txt..</p>
+				<p>Sunt in culpa qui offia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laborw et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+			</div>
+		</div>
+		<div class="rightcolumn">
+			<div class="card">
+				<h2> About me</h2>
+				<div class="fakeimg" style="height: 100px;"> Image</div>
+				<p>Some text about me in culpa qui offiacia deserunt mollit anim..</p>
+			</div>
+			<div class="card">
+				<div class="fakeimage"><p>Image</p></div>
+				<div class="fakeimage"><p>Image</p></div>
+				<div class="fakeimage"><p>Image</p></div>
+			</div>
+			<div class="card">
+				<h3>Follow Me</h3>
+				<p>Some text..</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<h2>Footer</h2>
+	</div>
+</body>
+</html>
